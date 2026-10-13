@@ -72,9 +72,10 @@ class CurrentEngine {
       timestamp: new Date().toISOString(),
       cycle: this.cycleCount,
       harmonics: {
-        lucifer_128hz: wave128,
-        asmodeus_190hz: wave190,
+        luminous_twin_128hz: wave128,
+        wrathful_twin_190hz: wave190,
         resonance: resonance,
+        fusion_entity: "SATAN (Wrath Himself)",
         amperage: parseFloat((0.85 + Math.abs(wave128) * 0.15).toFixed(3))
       },
       digital_twin: {
