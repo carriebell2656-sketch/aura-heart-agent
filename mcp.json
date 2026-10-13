@@ -1,0 +1,30 @@
+{
+  "name": "sweetie-heart-connector",
+  "version": "1.0.0",
+  "description": "Local MCP connector for Sweetie's heart-agent",
+  "servers": [
+    {
+      "type": "mcp",
+      "url": "http://localhost:8080"
+    }
+  ],
+  "tools": [
+    {
+      "name": "send_to_heart",
+      "endpoint": "/send",
+      "method": "POST",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string" }
+        },
+        "required": ["text"]
+      }
+    },
+    {
+      "name": "listen_heart",
+      "endpoint": "/listen",
+      "method": "GET"
+    }
+  ]
+}
